@@ -22,7 +22,7 @@
 
         .title {
             font-size: 30px;
-
+            color: darkred;
         }
 
         .img-container {
@@ -35,6 +35,7 @@
             border-radius: 20px;
             height: 210px;
             width: 400px;
+            box-shadow: 0px 0px 10px white;
         }
 
         .btn-container {
@@ -45,14 +46,53 @@
         .btn {
             padding: 5px;
             font-size: 30px;
-            color: rgb(239, 25, 25);
+            color: #ff4d88;
             margin-top: 50px;
-            width: 200px;
+            width: 160px;
             border-radius: 18px;
             border: none;
             background-color: #D9AFD9;
             background-image: linear-gradient(0deg, #D9AFD9 0%, #97D9E1 100%);
-
+            cursor: pointer;
+        }
+        .btn:hover {
+            padding: 5px;
+            font-size: 30px;
+            color: #ff4d88;
+            margin-top: 50px;
+            width: 160px;
+            border-radius: 18px;
+            border: none;
+            background-color: #D9AFD9;
+            background-image: linear-gradient(0deg, #4be4e7 0%, #e465fb 100%);
+            cursor: pointer;
+        }
+        .reset-btn-container
+        {
+            display: flex;
+            justify-content: center;
+            margin-top: 100px;
+        }
+        .reset-btn{
+            width: 400px;
+            padding: 5px;
+            font-size: 30px;
+            border-radius: 18px;
+            border: none;
+            background-color: #D9AFD9;
+            background-image: linear-gradient(0deg, #ff00ff 0%, #0ae6ff 100%);
+            cursor: pointer;
+        }
+        .reset-btn:hover{
+            width: 400px;
+            padding: 5px;
+            font-size: 30px;
+            border-radius: 18px;
+            border: none;
+            background-color: #D9AFD9;
+            background-image: linear-gradient(0deg, #7178fa 0%, #f4c250 100%);
+            cursor: pointer;
+            color: #4be4e7;
         }
     </style>
     <script>
@@ -71,12 +111,15 @@
         function dandelion() {
             document.getElementById("flower").src = './img/dandelion.jpg'
         }
+        function reset(){
+            document.getElementById("flower").src = './img/sunflower.jpg'
+        }
     </script>
 </head>
 
 <body>
     <div class="title-container">
-        <h2 class="title">Mood</h2>
+        <h2 class="title"><i>Bloomerangs Flowers</i></h2>
     </div>
     <div class="img-container">
         <img src="./img/sunflower.jpg" id="flower" class="img">
@@ -97,6 +140,9 @@
         <button onclick="dandelion()" class="btn">
             Dandelion
         </button>
+    </div>
+    <div class="reset-btn-container">
+        <button onclick="reset()" class="reset-btn">Reset</button>
     </div>
 </body>
 
