@@ -1,40 +1,95 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>Mood</title>
     <style>
-        .title-container{
-
+        .title-container 
+        {
+            background-color: red;
+            margin: 5px;
+            border-radius: 15px;
+            display: flex;
+            justify-content: center;
         }
-        .title{
 
+        .title 
+        {
+            font-size: 30px;
+            
         }
-    .img-container{
 
-    }
-    .img{
+        .img-container 
+        {
+            display: flex;
+            justify-content: center;
+        }
 
-    }
-        
+        .img
+         {
+             border-radius: 20px;
+         }
+         .btn-container
+         {
+            display: flex;
+            justify-content: space-evenly;
+            min-width: 200px;
+         }
+        .btn {
+            padding: 5px;
+            color: white;
+            background-color: tomato;
+            margin-top: 50px;
+        }
     </style>
+    <script>
+        function sunflower()
+        {
+            document.getElementById('flower').src='./img/sunflower.jpg'
+        }
+        function daisy()
+        {
+            document.getElementById('flower').src='./img/daisy.jpg'
+        }
+        function lotus()
+        {
+            document.getElementById('flower').src='./img/lotus.jpg'
+        }
+        function marigold()
+        {
+            document.getElementById('flower').src='./img/marigold.jpg'
+        }
+        function dandelion()
+        {
+            document.getElementById('flower').src='./img/dandelion.jpg'
+        }
+    </script>
 </head>
+
 <body>
     <div class="title-container">
         <h2 class="title">Mood</h2>
     </div>
     <div class="img-container">
-        <img src="" class="img">
+        <img src="./img/sunflower.jpg" class="img">
     </div>
     <div class="btn-container">
-        <button onclick="">
-a
+        <button onclick="sunflower()" id="flower"  class="btn">
+            Sunflower
         </button>
-        <button onclick="">
-            b
+        <button onclick="daisy()" id="flower" class="btn">
+            Daisy
         </button>
-        <button onclick="">
-            c
+        <button onclick="lotus()" id="flower" class="btn">
+            Lotus
+        </button>
+        <button onclick="marigold()" id="flower"  class="btn">
+            Marigold
+        </button>
+        <button onclick="dandelion()" id="flower"  class="btn">
+            Dandelion
         </button>
     </div>
 </body>
+
 </html>
