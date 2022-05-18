@@ -4,64 +4,72 @@
 <head>
     <title>Mood</title>
     <style>
-        .title-container 
-        {
-            background-color: red;
+        body {
+            background-image: url('./img/bg-img.webp');
+            background-repeat: no-repeat;
+            background-size: 1550px 750px;
+        }
+
+        .title-container {
+            background-color: #4158D0;
+            background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
             margin: 5px;
             border-radius: 15px;
             display: flex;
             justify-content: center;
+            opacity: 60%;
         }
 
-        .title 
-        {
+        .title {
             font-size: 30px;
-            
+
         }
 
-        .img-container 
-        {
+        .img-container {
             display: flex;
             justify-content: center;
+            margin-top: 50px;
         }
 
-        .img
-         {
-             border-radius: 20px;
-         }
-         .btn-container
-         {
+        .img {
+            border-radius: 20px;
+            height: 210px;
+            width: 400px;
+        }
+
+        .btn-container {
             display: flex;
             justify-content: space-evenly;
-            min-width: 200px;
-         }
+        }
+
         .btn {
             padding: 5px;
-            color: white;
-            background-color: tomato;
+            font-size: 30px;
+            color: rgb(239, 25, 25);
             margin-top: 50px;
+            width: 200px;
+            border-radius: 18px;
+            border: none;
+            background-color: #D9AFD9;
+            background-image: linear-gradient(0deg, #D9AFD9 0%, #97D9E1 100%);
+
         }
     </style>
     <script>
-        function sunflower()
-        {
-            document.getElementById('flower').src='./img/sunflower.jpg'
+        function sunflower() {
+            document.getElementById("flower").src = './img/sunflower.jpg'
         }
-        function daisy()
-        {
-            document.getElementById('flower').src='./img/daisy.jpg'
+        function daisy() {
+            document.getElementById("flower").src = './img/daisy.jpg'
         }
-        function lotus()
-        {
-            document.getElementById('flower').src='./img/lotus.jpg'
+        function lotus() {
+            document.getElementById("flower").src = './img/lotus.jpg'
         }
-        function marigold()
-        {
-            document.getElementById('flower').src='./img/marigold.jpg'
+        function marigold() {
+            document.getElementById("flower").src = './img/marigold.jpg'
         }
-        function dandelion()
-        {
-            document.getElementById('flower').src='./img/dandelion.jpg'
+        function dandelion() {
+            document.getElementById("flower").src = './img/dandelion.jpg'
         }
     </script>
 </head>
@@ -71,22 +79,22 @@
         <h2 class="title">Mood</h2>
     </div>
     <div class="img-container">
-        <img src="./img/sunflower.jpg" class="img">
+        <img src="./img/sunflower.jpg" id="flower" class="img">
     </div>
     <div class="btn-container">
-        <button onclick="sunflower()" id="flower"  class="btn">
+        <button onclick="sunflower()" class="btn">
             Sunflower
         </button>
-        <button onclick="daisy()" id="flower" class="btn">
+        <button onclick="daisy()" class="btn">
             Daisy
         </button>
-        <button onclick="lotus()" id="flower" class="btn">
+        <button onclick="lotus()" class="btn">
             Lotus
         </button>
-        <button onclick="marigold()" id="flower"  class="btn">
+        <button onclick="marigold()" class="btn">
             Marigold
         </button>
-        <button onclick="dandelion()" id="flower"  class="btn">
+        <button onclick="dandelion()" class="btn">
             Dandelion
         </button>
     </div>
