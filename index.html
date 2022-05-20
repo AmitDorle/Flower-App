@@ -5,35 +5,66 @@
     <title>Mood</title>
     <link rel="stylesheet" href="./css/style.css">
     <style>
-        body {
-            background-image: url('./img/bg-img.webp');
+        .sunflower {
+            background-image: url('./img/bg-sun.jpg');
             background-repeat: no-repeat;
             background-size: 1550px 750px;
         }
+
+        .daisy {
+            background-image: url('./img/bg-dais.jpg');
+            background-repeat: no-repeat;
+            background-size: 1550px 750px;
+        }
+
+        .lotus {
+            background-image: url('./img/bg-sun.jpg');
+            background-repeat: no-repeat;
+            background-size: 1550px 750px;
+        }
+
+        .marigold {
+            background-image: url('./img/bg-sun.jpg');
+            background-repeat: no-repeat;
+            background-size: 1550px 750px;
+        }
+
+        .dandelion {
+            background-image: url('./img/bg-sun.jpg');
+            background-repeat: no-repeat;
+            background-size: 1550px 750px;
+        }
+
     </style>
     <script>
         function sunflower() {
             document.getElementById("flower").src = './img/sunflower.jpg'
+            document.getElementById("container").className = "sunflower"
         }
         function daisy() {
             document.getElementById("flower").src = './img/daisy.jpg'
+            document.getElementById("container").className = "daisy"
         }
         function lotus() {
             document.getElementById("flower").src = './img/lotus.jpg'
+            document.getElementById("container").className = "lotus"
         }
         function marigold() {
             document.getElementById("flower").src = './img/marigold.jpg'
+            document.getElementById("container").className = "marigold"
         }
         function dandelion() {
             document.getElementById("flower").src = './img/dandelion.jpg'
+            document.getElementById("container").className = "dandelion"
         }
         function reset() {
             document.getElementById("flower").src = './img/sunflower.jpg'
+            document.getElementById("container").className = "sunflower"
         }
     </script>
 </head>
 
-<body>
+<body id="container" class="sunflower">
     <div class="title-container">
         <h2 class="title"><i>Bloomerangs Flowers</i></h2>
     </div>
