@@ -42,13 +42,15 @@
 .btn {
     padding: 5px;
     font-size: 30px;
-    color: #f70606;
+    color: #f0f01c;
     margin-top: 50px;
     width: 160px;
     border-radius: 18px;
     border: none;
-    background-color: #D9AFD9;
-    background-image: linear-gradient(0deg, #79fafa 0%, #f6dd61 100%);
+    background-color: #FF3CAC;
+    background-image: linear-gradient(225deg, #FF3CAC 0%, #784BA0 50%, #2B86C5 100%);
+    
+
     cursor: pointer;
 }
 
