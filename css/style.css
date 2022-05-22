@@ -1,18 +1,23 @@
-.title-container {
-    background-color: #4158D0;
-    background-image: linear-gradient(43deg, #e863f1 0%, #03f5d9 46%, #f2c571 100%);
-    margin: 5px;
-    border-radius: 15px;
+.title-father{
     display: flex;
     justify-content: center;
-    opacity: 80%;
+}
+.title-container {
+    margin: 5px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    width: 400px;
+    height: 85px;
+    box-shadow: 3px 3px 5px 1px red;
+    background-color: #D9AFD9;
+    background-image: linear-gradient(0deg, #2d2f2f 0%, #8a7697 100%); 
 }
 
 .title {
     font-size: 30px;
-    color: rgb(250, 7, 7);
+    color: rgb(4, 251, 255);
 }
-
 .img-container {
     display: flex;
     justify-content: center;
@@ -23,7 +28,7 @@
     border-radius: 20px;
     height: 210px;
     width: 400px;
-    box-shadow: 0px 0px 10px white;
+    filter:drop-shadow(1px 1px 15px rgb(10, 237, 245)) ;
 }
 
 .img:hover {
@@ -40,17 +45,15 @@
 }
 
 .btn {
+    background-color: #D9AFD9;
+    background-image: linear-gradient(0deg, #a8afaf 0%, #c5c2c8 100%);
     padding: 5px;
     font-size: 30px;
-    color: #f0f01c;
-    margin-top: 50px;
-    width: 160px;
+    color: #f01c31;
+    margin-top: 170px;
+    width: 170px;
     border-radius: 18px;
     border: none;
-    background-color: #FF3CAC;
-    background-image: linear-gradient(225deg, #FF3CAC 0%, #784BA0 50%, #2B86C5 100%);
-    
-
     cursor: pointer;
 }
 
@@ -58,19 +61,18 @@
     padding: 5px;
     font-size: 30px;
     color: #ff4d88;
-    margin-top: 50px;
     width: 160px;
     border-radius: 18px;
     border: none;
     background-color: #D9AFD9;
-    background-image: linear-gradient(0deg, #4be4e7 0%, #8af988 100%);
+    background-image: linear-gradient(0deg, #dcefef 0%, #8a7697 100%);
     cursor: pointer;
 }
 
 .reset-btn-container {
     display: flex;
     justify-content: center;
-    margin-top: 100px;
+    margin-top: 70px;
 }
 
 .reset-btn {
@@ -80,7 +82,7 @@
     border-radius: 18px;
     border: none;
     background-color: #D9AFD9;
-    background-image: linear-gradient(0deg, #ff00ff 0%, #0ae6ff 100%);
+    background-image: linear-gradient(0deg, #f115f1 0%, #7d8080 100%);
     cursor: pointer;
 }
 

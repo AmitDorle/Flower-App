@@ -5,87 +5,88 @@
     <title>Mood</title>
     <link rel="stylesheet" href="./css/style.css">
     <style>
-        .sunflower {
-            background-image: url('./img/bg-sun.jpg');
+         .bgmi {
+            background-image: url('./img/bgmi-bg.jpg');
             background-repeat: no-repeat;
-            background-size: 1550px 750px;
+            background-size: 1550px 865px;
         }
 
-        .daisy {
-            background-image: url('./img/bg-dais.jpg');
+        .gta {
+            background-image: url('./img/gta-bg.jpg');
             background-repeat: no-repeat;
-            background-size: 1550px 750px;
+            background-size: 1550px 865px;
         }
 
-        .lotus {
-            background-image: url('./img/bg-lotus.jpg');
+        .assasin {
+            background-image: url('./img/assasin-bg.jpg');
             background-repeat: no-repeat;
-            background-size: 1550px 750px;
+            background-size: 1550px 865px;
         }
 
-        .marigold {
-            background-image: url('./img/bg-img.webp');
+        .GOW {
+            background-image: url('./img/GOW-bg.webp');
             background-repeat: no-repeat;
-            background-size: 1550px 750px;
+            background-size: 1550px 865px;
         }
 
-        .dandelion {
-            background-image: url('./img/bg-dandelion.jpg');
+        .batman {
+            background-image: url('./img/batman-bg.jpg');
             background-repeat: no-repeat;
-            background-size: 1550px 750px;
+            background-size: 1550px 865px;
         }
-
     </style>
     <script>
-        function sunflower() {
-            document.getElementById("flower").src = './img/sunflower.jpg'
-            document.getElementById("container").className = "sunflower"
+        function bgmi() {
+            document.getElementById("game").src = './img/bgmi.jpg'
+            document.getElementById("container").className = "bgmi"
         }
-        function daisy() {
-            document.getElementById("flower").src = './img/daisy.jpg'
-            document.getElementById("container").className = "daisy"
+        function gta() {
+            document.getElementById("game").src = './img/gta.jpg'
+            document.getElementById("container").className = "gta"
         }
-        function lotus() {
-            document.getElementById("flower").src = './img/lotus.jpg'
-            document.getElementById("container").className = "lotus"
+        function assasin() {
+            document.getElementById("game").src = './img/assasin.jpg'
+            document.getElementById("container").className = "assasin"
         }
-        function marigold() {
-            document.getElementById("flower").src = './img/marigold.jpg'
-            document.getElementById("container").className = "marigold"
+        function GOW() {
+            document.getElementById("game").src = './img/GOW.webp'
+            document.getElementById("container").className = "GOW"
         }
-        function dandelion() {
-            document.getElementById("flower").src = './img/dandelion.jpg'
-            document.getElementById("container").className = "dandelion"
+        function batman() {
+            document.getElementById("game").src = './img/batman.jpg'
+            document.getElementById("container").className = "batman"
         }
         function reset() {
-            document.getElementById("flower").src = './img/sunflower.jpg'
-            document.getElementById("container").className = "sunflower"
+            document.getElementById("game").src = './img/bgmi.jpg'
+            document.getElementById("container").className = "bgmi"
         }
     </script>
 </head>
 
-<body id="container" class="sunflower">
-    <div class="title-container">
-        <h2 class="title"><i>Bloomerangs Flowers</i></h2>
+<body id="container" class="bgmi">
+    <div class="title-father">
+        <div class="title-container">
+            <h2 class="title"><b>GAME STATION</b></h2>
+        </div>
     </div>
     <div class="img-container">
-        <img src="./img/sunflower.jpg" id="flower" class="img">
+        <img src="./img/bgmi.jpg" id="game" class="img">
     </div>
     <div class="btn-container">
-        <button onclick="sunflower()" class="btn">
-            Sunflower
+        <button onclick="bgmi()" class="btn">
+            BGMI
         </button>
-        <button onclick="daisy()" class="btn">
-            Daisy
+        <button onclick="gta()" class="btn">
+            GTA
         </button>
-        <button onclick="lotus()" class="btn">
-            Lotus
+        <button onclick="assasin()" class="btn">
+            ASSASIN
         </button>
-        <button onclick="marigold()" class="btn">
-            Marigold
+        <button onclick="GOW()" class="btn">
+            G-Of-W
         </button>
-        <button onclick="dandelion()" class="btn">
-            Dandelion
+        <button onclick="batman()" class="btn">
+            BATMAN
         </button>
     </div>
     <div class="reset-btn-container">
